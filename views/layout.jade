@@ -1,0 +1,20 @@
+!!! 5
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/normalize.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		#container
+			header
+				a(href="/")
+					img(src='images/WeeAcornLogo.png', alt='WeeAcorn Logo')
+				nav
+					ul
+						li: a(href="/") Home
+						li: a(href="/photography") Photography
+						li: a(href="/painting") Painting
+						li: a(href="/about") About
+						li: a(href="/contact") Contact
+					
+			!= body

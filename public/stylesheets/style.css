@@ -1,0 +1,9 @@
+*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+body{font:14px "Lucida Grande",Helvetica,Arial,sans-serif;background-image:url("sprites/body_bg.png")}
+#container{width:980px;background-color:#fff;margin:75px auto;padding:25px}
+header{text-align:center;zoom:1;}
+header:before,header:after{content:"";display:table}
+header:after{clear:both}
+header nav ul{padding:0;}
+header nav ul li{float:left;width:175px;}
+header nav ul li a{color:#6c6c6c;text-decoration:none;font-size:16px;text-transform:uppercase;letter-spacing:3px}
