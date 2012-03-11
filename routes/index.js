@@ -2,6 +2,14 @@
 /*
  * GET home page.
  */
+ 
+var albums = {
+	"BrandonandTina": "Brandon and Tina",
+	"Rebecca Roman": "Rebecca Roman",
+	"WesleyCastle": "Wesley Castle",
+	"SaraandGrant": "Sara and Grant",
+	"LaurenandAaron": "Lauren and Aaron"
+}
 
 exports.index = function(req, res){
   res.render('index', { title: 'Title' })
@@ -12,7 +20,7 @@ exports.photography = function(req, res){
 };
 
 	exports.album = function(req, res){
-	  res.render('album', { title: 'Album' })
+	  res.render('album', { title: albums[req.params.title] })
 	};
 
 exports.painting = function(req, res){

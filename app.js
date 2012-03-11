@@ -66,7 +66,7 @@ app.dynamicHelpers({
 // Routes
 app.get('/', routes.index);
 app.get('/photography', routes.photography);
-app.get('/photography/*', routes.album);
+app.get('/photography/:title', routes.album);
 app.get('/painting', routes.painting);
 app.get('/about', routes.about);
 app.get('/contact', routes.contact);
