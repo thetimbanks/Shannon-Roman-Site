@@ -65,6 +65,11 @@ app.dynamicHelpers({
 
 // Routes
 app.get('/', routes.index);
+app.get('/photography', routes.photography);
+app.get('/photography/*', routes.album);
+app.get('/painting', routes.painting);
+app.get('/about', routes.about);
+app.get('/contact', routes.contact);
 
 var port = process.env.PORT || 3000;
 app.listen(port);

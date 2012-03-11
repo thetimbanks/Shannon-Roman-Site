@@ -1,15 +1,31 @@
 *{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 body{font:14px "Lucida Grande",Helvetica,Arial,sans-serif;background-image:url("sprites/body_bg.png")}
-#container{width:980px;background-color:#fff;margin:75px auto;padding:25px}
+#container{width:980px;background-color:#fff;margin:75px auto;padding:20px 90px}
+h1{color:#6c6c6c;font-weight:normal}
 header{text-align:center;zoom:1;}
 header:before,header:after{content:"";display:table}
 header:after{clear:both}
-header nav ul{padding:0;width:800px;margin:0 auto;zoom:1;}
+header nav ul{padding:0;zoom:1;}
 header nav ul:before,header nav ul:after{content:"";display:table}
 header nav ul:after{clear:both}
 header nav ul li{float:left;}
 header nav ul li a{color:#6c6c6c;text-decoration:none;font-size:16px;text-transform:uppercase;letter-spacing:3px}
 header nav ul li + li{margin-left:80px}
+footer{margin-top:25px;color:#6c6c6c}
 #slides{margin-top:25px;}
 #slides ul{list-style:none;padding:0;position:relative;height:400px;width:800px;margin:0 auto;}
 #slides ul li{position:absolute;display:none}
+#albums ul{padding:0;list-style:none;zoom:1;}
+#albums ul:before,#albums ul:after{content:"";display:table}
+#albums ul:after{clear:both}
+#albums ul li{float:left;width:190px;}
+#albums ul li a{display:block;text-align:center;text-decoration:none;}
+#albums ul li a img{padding:5px;border:1px solid #ccc}
+#albums ul li a span{font-size:11px;color:#6c6c6c}
+#albums ul li + li{margin-left:12px}
+#album ul{padding:0;list-style:none;zoom:1;}
+#album ul:before,#album ul:after{content:"";display:table}
+#album ul:after{clear:both}
+#album ul li{float:left;width:190px;}
+#album ul li img{padding:5px;border:1px solid #ccc}
+#album ul li + li{margin-left:12px}

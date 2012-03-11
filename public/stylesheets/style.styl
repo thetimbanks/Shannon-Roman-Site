@@ -1,3 +1,6 @@
+/* Variables */
+main-grey = #6c6c6c
+
 /* General Styles */
 * 
 	-moz-box-sizing border-box
@@ -12,7 +15,11 @@ body
 	width 980px
 	background-color #fff
 	margin 75px auto
-	padding 25px
+	padding 20px 90px
+	
+h1
+	color main-grey
+	font-weight normal
 
 header
 	text-align center
@@ -20,19 +27,21 @@ header
 	nav
 		ul
 			padding 0
-			width 800px
-			margin	0 auto
 			clearfix()
 			li 
 				float left
 				a
-					color #6c6c6c
+					color main-grey
 					text-decoration none
 					font-size 16px
 					text-transform uppercase
 					letter-spacing	3px
 			li + li
 				margin-left 80px
+				
+footer
+	margin-top 25px
+	color main-grey
 					
 /* Home Page */
 #slides
@@ -47,3 +56,42 @@ header
 		li
 			position absolute
 			display none
+			
+/* Photography Page */
+#albums
+	ul
+		padding 0
+		list-style none
+		clearfix()
+		li
+			float left
+			width 190px
+			a
+				display block
+				text-align center
+				text-decoration none
+				img
+					padding 5px
+					border 1px solid #ccc
+				span
+					font-size 11px
+					color main-grey
+		li + li
+			margin-left 12px
+			
+/* Album Page */
+/* Photography Page */
+#album
+	ul
+		padding 0
+		list-style none
+		clearfix()
+		li
+			float left
+			width 190px
+			img
+				padding 5px
+				border 1px solid #ccc
+		li + li
+			margin-left 12px
+		

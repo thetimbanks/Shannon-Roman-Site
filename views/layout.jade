@@ -4,13 +4,13 @@ html
 		title= title
 		link(rel='stylesheet', href='/stylesheets/normalize.css')
 		link(rel='stylesheet', href='/stylesheets/style.css')
-		link(rel='shortcut icon', href='images/favicon.ico', type='image/x-icon')
+		link(rel='shortcut icon', href='/images/favicon.ico', type='image/x-icon')
 		!= renderScriptTags(scripts)
 	body
 		#container
 			header
 				a(href="/")
-					img(src='images/WeeAcornLogo.png', alt='WeeAcorn Logo')
+					img(src='/images/WeeAcornLogo.png', alt='WeeAcorn Logo')
 				nav
 					ul
 						li: a(href="/") Home
@@ -20,3 +20,6 @@ html
 						li: a(href="/contact") Contact
 			#content		
 				!= body
+				
+			footer
+				p &copy; 2012 Shannon Roman
