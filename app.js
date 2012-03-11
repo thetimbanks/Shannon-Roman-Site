@@ -44,6 +44,25 @@ app.configure('production', function(){
   app.use(express.errorHandler()); 
 });
 
+app.helpers({
+  renderScriptTags: function (all) {
+    if (all != undefined) {
+      return all.map(function(script) {
+        return '<script src="/javascripts/' + script + '"></script>';
+      }).join('\n ');
+    }
+    else {
+      return '';
+    }
+  }
+});
+
+app.dynamicHelpers({
+  scripts: function(req, res) {
+    return ['jquery-1.7.1.min.js'];
+  }
+});
+
 // Routes
 app.get('/', routes.index);
 

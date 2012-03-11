@@ -1,3 +1,4 @@
+/* General Styles */
 * 
 	-moz-box-sizing border-box
 	-webkit-box-sizing border-box
@@ -19,12 +20,30 @@ header
 	nav
 		ul
 			padding 0
+			width 800px
+			margin	0 auto
+			clearfix()
 			li 
 				float left
-				width 185px
 				a
 					color #6c6c6c
 					text-decoration none
 					font-size 16px
 					text-transform uppercase
 					letter-spacing	3px
+			li + li
+				margin-left 80px
+					
+/* Home Page */
+#slides
+	margin-top 25px
+	ul
+		list-style none
+		padding 0
+		position relative
+		height 400px
+		width 800px
+		margin 0 auto
+		li
+			position absolute
+			display none

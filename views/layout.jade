@@ -4,6 +4,8 @@ html
 		title= title
 		link(rel='stylesheet', href='/stylesheets/normalize.css')
 		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='shortcut icon', href='images/favicon.ico', type='image/x-icon')
+		!= renderScriptTags(scripts)
 	body
 		#container
 			header
@@ -16,5 +18,5 @@ html
 						li: a(href="/painting") Painting
 						li: a(href="/about") About
 						li: a(href="/contact") Contact
-					
-			!= body
+			#content		
+				!= body
