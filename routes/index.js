@@ -5,7 +5,7 @@
  
 var albums = {
 	"BrandonandTina": "Brandon and Tina",
-	"Rebecca Roman": "Rebecca Roman",
+	"RebeccaRoman": "Rebecca Roman",
 	"WesleyCastle": "Wesley Castle",
 	"SaraandGrant": "Sara and Grant",
 	"LaurenandAaron": "Lauren and Aaron"
