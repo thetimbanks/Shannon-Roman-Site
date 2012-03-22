@@ -25,21 +25,43 @@ header
 	text-align center
 	clearfix()
 	nav
-		margin-left 130px
+		margin-left 270px
 		ul
 			padding 0
 			margin 0
 			clearfix()
 			li 
 				float left
+				position relative
+				font-size 12px
+				text-transform uppercase
+				color main-grey
 				a
 					color main-grey
 					text-decoration none
-					font-size 12px
-					text-transform uppercase
-					letter-spacing	3px
+				a:hover
+					text-decoration underline
+				ul
+					display none
+					position absolute
+					top 100%
+					z-index 10
+					background-color rgba(250, 250, 250, 0.75)
+					li
+						display block
+						width 150px
+						text-align left
+						margin-top 12px
+						margin-bottom 3px
+						padding-left 3px
+					li + li
+						margin-left 0
+			li:hover ul
+				display block
+			li:hover > a
+				text-decoration underline
 			li + li
-				margin-left 80px
+				margin-left 40px
 				
 footer
 	margin-top 25px
@@ -47,6 +69,9 @@ footer
 	color main-grey
 	a
 		color main-grey
+		
+#content
+	padding 0 90px
 					
 /* Home Page */
 #slides

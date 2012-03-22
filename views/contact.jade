@@ -1,1 +1,16 @@
 h1=  title
+
+form(method="POST")
+	fieldset(class="fields")
+		ul
+			li
+				label(for="name") Name:
+				input(type="text", id="name", name="name")
+			li
+				label(for="email") Email:
+				input(type="text", id="email", name="email")
+			li
+				label(for="comments") Comments:
+				textarea(name="comments", id="comments")
+	fieldset(class="buttons")
+		input(type="submit", value="Send")

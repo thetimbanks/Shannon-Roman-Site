@@ -7,6 +7,8 @@ var express = require('express')
   , routes = require('./routes')
   , stylus = require('stylus')
   , nib = require('nib')
+  , email = require('mailer')
+  , config = require('./config');
 
 var app = module.exports = express.createServer();
 
@@ -65,11 +67,16 @@ app.dynamicHelpers({
 
 // Routes
 app.get('/', routes.index);
+
 app.get('/photography', routes.photography);
-app.get('/photography/:title', routes.album);
+app.get('/photography/engagement', routes.engagement);
+app.get('/photography/family', routes.family);
+app.get('/photography/senior', routes.senior);
+
 app.get('/painting', routes.painting);
 app.get('/about', routes.about);
 app.get('/contact', routes.contact);
+app.post('/contact', routes.contact);
 
 var port = process.env.PORT || 3000;
 app.listen(port);
