@@ -1,5 +1,6 @@
 /* Variables */
 main-grey = #6c6c6c
+orange = #f48e06
 
 /* General Styles */
 * 
@@ -20,7 +21,22 @@ body
 h1
 	color main-grey
 	font-weight normal
+	
+/* Columns */
+.cols
+	clearfix()
+	.col
+		float left
+	.col1
+		width 25%
+	.col2
+		width 50%
+	.col3
+		width 75%
+	.col4
+		width 100%
 
+/* Header */ 
 header
 	text-align center
 	clearfix()
@@ -69,9 +85,11 @@ footer
 	color main-grey
 	a
 		color main-grey
-		
+
+/* Content */	
 #content
 	padding 0 90px
+	color orange
 					
 /* Home Page */
 #slides

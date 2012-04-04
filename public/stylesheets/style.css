@@ -2,6 +2,14 @@
 body{font:14px "Lucida Grande",Helvetica,Arial,sans-serif;background-image:url("sprites/body_bg.png")}
 #container{width:980px;background-color:#fff;margin:25px auto;padding:20px 0}
 h1{color:#6c6c6c;font-weight:normal}
+.cols{zoom:1;}
+.cols:before,.cols:after{content:"";display:table}
+.cols:after{clear:both}
+.cols .col{float:left}
+.cols .col1{width:25%}
+.cols .col2{width:50%}
+.cols .col3{width:75%}
+.cols .col4{width:100%}
 header{text-align:center;zoom:1;}
 header:before,header:after{content:"";display:table}
 header:after{clear:both}
@@ -20,7 +28,7 @@ header nav ul li:hover > a{text-decoration:underline}
 header nav ul li + li{margin-left:40px}
 footer{margin-top:25px;padding:0 90px;color:#6c6c6c;}
 footer a{color:#6c6c6c}
-#content{padding:0 90px}
+#content{padding:0 90px;color:#f48e06}
 #slides{margin-top:15px;}
 #slides ul{list-style:none;padding:0;position:relative;height:530px;width:800px;margin:0 auto;}
 #slides ul li{position:absolute;display:none}

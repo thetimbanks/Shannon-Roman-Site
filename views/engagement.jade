@@ -1,1 +1,31 @@
 h1=  title
+
+#gallery.ad-gallery
+	.ad-image-wrapper
+	.ad-controls
+	.ad-nav
+		.ad-thumbs
+			ul.ad-thumb-list
+				li
+					a(href="https://s3.amazonaws.com/ShannonRoman/homeslides/1.jpg")
+						img.image0(src="https://s3.amazonaws.com/ShannonRoman/homeslides/1.jpg", width="150", height="100")
+				li
+					a(href="https://s3.amazonaws.com/ShannonRoman/homeslides/2.jpg")
+						img.image0(src="https://s3.amazonaws.com/ShannonRoman/homeslides/2.jpg", width="150", height="100")
+				li
+					a(href="https://s3.amazonaws.com/ShannonRoman/homeslides/3.jpg")
+						img.image0(src="https://s3.amazonaws.com/ShannonRoman/homeslides/3.jpg", width="150", height="100")
+				li
+					a(href="https://s3.amazonaws.com/ShannonRoman/homeslides/4.jpg")
+						img.image0(src="https://s3.amazonaws.com/ShannonRoman/homeslides/4.jpg", width="150", height="100")
+				li
+					a(href="https://s3.amazonaws.com/ShannonRoman/homeslides/5.jpg")
+						img.image0(src="https://s3.amazonaws.com/ShannonRoman/homeslides/5.jpg", width="150", height="100")
+						
+
+
+script(src="/javascripts/jquery.ad-gallery.js")
+script
+	var galleries = $('.ad-gallery').adGallery({
+		effect: 'fade'
+	});
