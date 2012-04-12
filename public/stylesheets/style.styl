@@ -2,6 +2,12 @@
 main-grey = #6c6c6c
 orange = #f48e06
 
+/* Mixins */
+CookieFont(n)
+	color orange
+	font-family 'Cookie'
+	font-size n
+
 /* General Styles */
 * 
 	-moz-box-sizing border-box
@@ -16,11 +22,11 @@ body
 	width 980px
 	background-color #fff
 	margin 25px auto
-	padding 20px 0
+	padding 20px 0 0
 	
 h1
-	color main-grey
 	font-weight normal
+	margin 0 0 5px 45px
 	
 /* Columns */
 .cols
@@ -83,13 +89,26 @@ footer
 	margin-top 25px
 	padding 0 90px
 	color main-grey
+	overflow hidden
 	a
 		color main-grey
+	p
+		float left
+		margin-top 25px
+	p.facebook
+		float right
+		CookieFont 20px
+		margin-top 5px
+		a
+			display block
+			clear both
+			text-align center
+		
 
 /* Content */	
 #content
 	padding 0 90px
-	color orange
+	CookieFont 25px
 					
 /* Home Page */
 #slides
@@ -143,3 +162,19 @@ footer
 		li + li
 			margin-left 12px
 		
+/* Slideshow */
+.ad-slideshow-stop
+		display none
+.ad-slideshow-running
+	.ad-slideshow-start
+		display none
+	.ad-slideshow-stop
+		display inline
+	.ad-slideshow-countdown
+		display none
+		
+.ad-gallery .ad-forward, .ad-gallery .ad-back
+	top 23px
+	
+.ad-gallery .ad-thumbs li a.ad-active img
+	border 3px solid orange

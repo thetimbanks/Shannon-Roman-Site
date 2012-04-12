@@ -1,7 +1,7 @@
 *{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 body{font:14px "Lucida Grande",Helvetica,Arial,sans-serif;background-image:url("sprites/body_bg.png")}
-#container{width:980px;background-color:#fff;margin:25px auto;padding:20px 0}
-h1{color:#6c6c6c;font-weight:normal}
+#container{width:980px;background-color:#fff;margin:25px auto;padding:20px 0 0}
+h1{font-weight:normal;margin:0 0 5px 45px}
 .cols{zoom:1;}
 .cols:before,.cols:after{content:"";display:table}
 .cols:after{clear:both}
@@ -26,9 +26,12 @@ header nav ul li ul li + li{margin-left:0}
 header nav ul li:hover ul{display:block}
 header nav ul li:hover > a{text-decoration:underline}
 header nav ul li + li{margin-left:40px}
-footer{margin-top:25px;padding:0 90px;color:#6c6c6c;}
+footer{margin-top:25px;padding:0 90px;color:#6c6c6c;overflow:hidden;}
 footer a{color:#6c6c6c}
-#content{padding:0 90px;color:#f48e06}
+footer p{float:left;margin-top:25px}
+footer p.facebook{float:right;color:#f48e06;font-family:'Cookie';font-size:20px;margin-top:5px;}
+footer p.facebook a{display:block;clear:both;text-align:center}
+#content{padding:0 90px;color:#f48e06;font-family:'Cookie';font-size:25px}
 #slides{margin-top:15px;}
 #slides ul{list-style:none;padding:0;position:relative;height:530px;width:800px;margin:0 auto;}
 #slides ul li{position:absolute;display:none}
@@ -46,3 +49,9 @@ footer a{color:#6c6c6c}
 #album ul li{float:left;width:190px;}
 #album ul li img{padding:5px;border:1px solid #ccc}
 #album ul li + li{margin-left:12px}
+.ad-slideshow-stop{display:none}
+.ad-slideshow-running .ad-slideshow-start{display:none}
+.ad-slideshow-running .ad-slideshow-stop{display:inline}
+.ad-slideshow-running .ad-slideshow-countdown{display:none}
+.ad-gallery .ad-forward,.ad-gallery .ad-back{top:23px}
+.ad-gallery .ad-thumbs li a.ad-active img{border:3px solid #f48e06}

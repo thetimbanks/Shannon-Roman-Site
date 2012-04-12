@@ -43,11 +43,15 @@ exports.about = function(req, res){
 exports.contact = function(req, res){
 	if (req.route.method === "post") {
 		if (req.body.name != "" && req.body.email != "" && req.body.comments != "") {
+			body = "A user has filled out the contact form with the following information.";
+			body += "Name: " + req.body.name;
+			body += "Email: " + req.body.email;
+			body += "Comment: " + req.body.comments;
+			
 			email.send(merge_options(config.sendgrid,
 				{
-			  		to : req.body.email,
-			  		subject : "node_mailer test email",
-			  		body : "hello this a test email from the node_mailer"
+			  		subject : "Message from WeeAcorn!",
+			  		body : body
 			  	}),
 			  function(err, result){
 			    if(err){ console.log(err); }

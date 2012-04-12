@@ -429,7 +429,7 @@
           if($(this).is('.ad-forward')) {
             direction = 'right';
           };
-          thumbs_scroll_interval = setInterval(
+          /*thumbs_scroll_interval = setInterval(
             function() {
               has_scrolled++;
               // Don't want to stop the slideshow just because we scrolled a pixel or two
@@ -443,7 +443,7 @@
               context.thumbs_wrapper.scrollLeft(left);
             },
             10
-          );
+          );*/
           $(this).css('opacity', 1);
         },
         function() {
@@ -813,7 +813,7 @@
       var pre = this.settings.countdown_prefix;
       var su = this.settings.countdown_sufix;
       clearInterval(context.countdown_interval);
-      this.countdown.show().html(pre + (this.settings.speed / 1000) + su);
+      //this.countdown.show().html(pre + (this.settings.speed / 1000) + su);
       var slide_timer = 0;
       this.countdown_interval = setInterval(
         function() {
