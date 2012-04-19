@@ -71,7 +71,7 @@ app.get('/', routes.index);
 app.get('/photography', routes.photography);
 app.get('/photography/engagement', routes.engagement);
 app.get('/photography/family', routes.family);
-app.get('/photography/senior', routes.senior);
+app.get('/photography/portrait', routes.portrait);
 
 app.get('/painting', routes.painting);
 app.get('/about', routes.about);

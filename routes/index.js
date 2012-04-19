@@ -28,8 +28,8 @@ exports.photography = function(req, res){
 	exports.family = function(req, res){
 	  res.render('family', { title: 'Family' })
 	};
-	exports.senior = function(req, res){
-	  res.render('senior', { title: 'Senior Pictures' })
+	exports.portrait = function(req, res){
+	  res.render('portrait', { title: 'Portraits' })
 	};
 
 exports.painting = function(req, res){
