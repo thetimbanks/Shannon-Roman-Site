@@ -1,16 +1,28 @@
 h1=  title
 
+- if (errors.length)
+	#error
+		p Please correct the following issues before contacting me
+		ul
+			- errors.forEach(function(error){
+				li= error
+			- })
+			
+- if (emailSent)
+	#success
+		p An email has been sent to WeeAcorn!
+
 form(method="POST")
 	fieldset(class="fields")
 		ul
 			li
-				label(for="name") Name:
-				input(type="text", id="name", name="name")
+				label(for="name") Name
+				input(type="text", id="name", name="name", value=req.body.name || "")
 			li
-				label(for="email") Email:
-				input(type="text", id="email", name="email")
+				label(for="email") Email
+				input(type="text", id="email", name="email", value=req.body.email || "")
 			li
-				label(for="comments") Comments:
-				textarea(name="comments", id="comments")
+				label(for="comments") Comments
+				textarea(name="comments", id="comments")= req.body.comments
 	fieldset(class="buttons")
 		input(type="submit", value="Send")

@@ -55,3 +55,12 @@ footer p.facebook a{display:block;clear:both;text-align:center}
 .ad-slideshow-running .ad-slideshow-countdown{display:none}
 .ad-gallery .ad-forward,.ad-gallery .ad-back{top:23px}
 .ad-gallery .ad-thumbs li a.ad-active img{border:3px solid #f48e06}
+form{margin-left:30px;}
+form fieldset{border:0}
+form ul{list-style:none;padding-left:0;}
+form ul li label{width:120px;display:block}
+form ul li textarea,form ul li input{width:330px}
+form ul li textarea{height:100px}
+form ul li + li{margin-top:15px}
+#error,#success{margin-left:40px;background-color:#fcc;border:3px solid #ff8080;padding:0 15px;color:#6c6c6c;width:450px}
+#success{background-color:#cfc;border-color:#08ff08}

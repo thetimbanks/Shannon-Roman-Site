@@ -41,6 +41,7 @@ exports.about = function(req, res){
 };
 
 exports.contact = function(req, res){
+	var errors = [], emailSent = false;
 	if (req.route.method === "post") {
 		if (req.body.name != "" && req.body.email != "" && req.body.comments != "") {
 			body = "A user has filled out the contact form with the following information.";
@@ -56,11 +57,23 @@ exports.contact = function(req, res){
 			  function(err, result){
 			    if(err){ console.log(err); }
 			  });
+			  
+			emailSent = true;
+			req.body = {};
 		} else {
+			if (req.body.name === "") {
+				errors.push("Please enter your name");
+			}
+			if (req.body.email === "") {
+				errors.push("Please enter your email address");
+			}
+			if (req.body.comments === "") {
+				errors.push("Please leave some comments");
+			}
 			console.log("Errors on form");
 		}
 	}
-  res.render('contact', { title: 'Contact' })
+  res.render('contact', { title: 'Contact', errors: errors, req: req, emailSent: emailSent })
 };
 
 function merge_options(obj1,obj2){
