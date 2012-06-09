@@ -2,14 +2,6 @@
 /*
  * GET home page.
  */
- 
-var albums = {
-	"BrandonandTina": "Brandon and Tina",
-	"RebeccaRoman": "Rebecca Roman",
-	"WesleyCastle": "Wesley Castle",
-	"SaraandGrant": "Sara and Grant",
-	"LaurenandAaron": "Lauren and Aaron"
-};
 
 var config = require('../config')
 	, email = require('mailer');
@@ -35,6 +27,13 @@ exports.photography = function(req, res){
 exports.painting = function(req, res){
   res.render('painting', { title: 'Painting' })
 };
+
+	exports.kidsroom = function(req, res){
+	  res.render('kidsroom', { title: 'Kids Room' })
+	};
+	exports.other = function(req, res){
+	  res.render('other', { title: 'Other Paintings' })
+	};
 
 exports.about = function(req, res){
   res.render('about', { title: 'About' })

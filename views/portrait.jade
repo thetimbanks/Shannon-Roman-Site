@@ -1,0 +1,31 @@
+h1=  title
+
+#gallery.ad-gallery
+	.ad-image-wrapper
+	.ad-controls
+	.ad-nav
+		.ad-thumbs
+			ul.ad-thumb-list
+
+						
+
+
+script(src="/javascripts/jquery.tmpl.js")
+script(src="/javascripts/slideshow.tmpl.js")
+script(src="/javascripts/jquery.ad-gallery.js")
+script
+	var images = [
+	{Album: "Lauren", Full: "Lauren-1.jpg", Thumb: "Lauren-1.jpg"},
+	{Album: "Lauren", Full: "Lauren-2.jpg", Thumb: "Lauren-2.jpg"},
+	{Album: "Rebecca", Full: "Rebecca-1.jpg", Thumb: "Rebecca-1.jpg"},
+	{Album: "Rebecca", Full: "Rebecca-2.jpg", Thumb: "Rebecca-2.jpg"},
+	{Album: "Rebecca", Full: "Rebecca-3.jpg", Thumb: "Rebecca-3.jpg"},
+	];
+
+	BuildImageList(images, "photography", "portrait");
+	
+	var galleries = $('.ad-gallery').adGallery({
+		effect: 'fade',
+		width: '800px',
+		height: '530px'
+	});

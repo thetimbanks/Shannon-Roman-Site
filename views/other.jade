@@ -1,0 +1,34 @@
+h1=  title
+
+#gallery.ad-gallery
+	.ad-image-wrapper
+	.ad-controls
+	.ad-nav
+		.ad-thumbs
+			ul.ad-thumb-list
+	
+
+
+script(src="/javascripts/jquery.tmpl.js")
+script(src="/javascripts/slideshow.tmpl.js")
+script(src="/javascripts/jquery.ad-gallery.js")
+script
+	var images = [
+	{Album: "", Full: "Painting-9.jpg", Thumb: "PaintingThumbnail-9.jpg"},
+	{Album: "", Full: "Painting-10.jpg", Thumb: "PaintingThumbnail-10.jpg"},
+	{Album: "", Full: "Painting-11.jpg", Thumb: "PaintingThumbnail-11.jpg"},
+	{Album: "", Full: "Painting-12.jpg", Thumb: "PaintingThumbnail-12.jpg"},
+	{Album: "", Full: "Painting-13.jpg", Thumb: "PaintingThumbnail-13.jpg"},
+	{Album: "", Full: "Painting-14.jpg", Thumb: "PaintingThumbnail-14.jpg"},
+	{Album: "", Full: "Painting-15.jpg", Thumb: "PaintingThumbnail-15.jpg"},
+	{Album: "", Full: "Painting-16.jpg", Thumb: "PaintingThumbnail-16.jpg"},
+	{Album: "", Full: "Painting-17.jpg", Thumb: "PaintingThumbnail-17.jpg"},
+	];
+
+	BuildImageList(images, "painting", "OtherOriginal");
+	
+	var galleries = $('.ad-gallery').adGallery({
+		effect: 'fade',
+		width: '800px',
+		height: '530px'
+	});

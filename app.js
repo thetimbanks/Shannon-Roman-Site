@@ -74,6 +74,9 @@ app.get('/photography/family', routes.family);
 app.get('/photography/portrait', routes.portrait);
 
 app.get('/painting', routes.painting);
+app.get('/painting/kidsroom', routes.kidsroom);
+app.get('/painting/other', routes.other);
+
 app.get('/about', routes.about);
 app.get('/contact', routes.contact);
 app.post('/contact', routes.contact);

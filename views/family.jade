@@ -5,55 +5,39 @@ h1=  title
 	.ad-controls
 	.ad-nav
 		.ad-thumbs
-			ul.ad-thumb-list
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/family/Cables1.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/family/Cables1.jpg")
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/family/Cables4.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/family/Cables4.jpg")
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/family/Cables5.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/family/Cables5.jpg")
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/family/Castles1.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/family/Castles1.jpg")
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/family/Castles2.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/family/Castles2.jpg")
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/family/Castles3.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/family/Castles3.jpg")
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/family/Castles4.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/family/Castles4.jpg")
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/family/Castles5.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/family/Castles5.jpg")
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/family/Castles6.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/family/Castles6.jpg")
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/family/Castles7.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/family/Castles7.jpg")
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/family/Castles8.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/family/Castles8.jpg")
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/family/Castles9.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/family/Castles9.jpg")
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/family/Castles10.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/family/Castles10.jpg")
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/family/Castles11.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/family/Castles11.jpg")
+			ul.ad-thumb-list	
 
-						
-
-
+script(src="/javascripts/jquery.tmpl.js")
+script(src="/javascripts/slideshow.tmpl.js")
 script(src="/javascripts/jquery.ad-gallery.js")
 script
+	var images = [
+	{Album: "Graham9Months", Full: "Graham9Months-2.jpg", Thumb: "Graham9months-1.jpg"},
+	{Album: "Graham9Months", Full: "Graham9Months-3.jpg", Thumb: "Graham9months-2.jpg"},
+	{Album: "Graham9Months", Full: "Graham9Months-4.jpg", Thumb: "Graham9months-3.jpg"},
+	{Album: "Graham9Months", Full: "Graham9Months-5.jpg", Thumb: "Graham9months-4.jpg"},
+	
+	{Album: "GrahamBday", Full: "GrahamBday-1.jpg", Thumb: "GrahamBday-1.jpg"},
+	{Album: "GrahamBday", Full: "GrahamBday-2.jpg", Thumb: "GrahamBday-2.jpg"},
+	{Album: "GrahamBday", Full: "GrahamBday-3.jpg", Thumb: "GrahamBday-3.jpg"},
+	
+	
+	{Album: "WesAndCasey", Full: "WesAndCasey-1.jpg", Thumb: "WesAndCasey-1.jpg"},
+	{Album: "WesAndCasey", Full: "WesAndCasey-2.jpg", Thumb: "WesAndCasey-2.jpg"},
+	{Album: "WesAndCasey", Full: "WesAndCasey-3.jpg", Thumb: "WesAndCasey-3.jpg"},
+	{Album: "WesAndCasey", Full: "WesAndCasey-4.jpg", Thumb: "WesAndCasey-4.jpg"},
+	{Album: "WesAndCasey", Full: "WesAndCasey-5.jpg", Thumb: "WesAndCasey-5.jpg"},
+	{Album: "WesAndCasey", Full: "WesAndCasey-6.jpg", Thumb: "WesAndCasey-6.jpg"},
+	{Album: "WesAndCasey", Full: "WesAndCasey-7.jpg", Thumb: "WesAndCasey-7.jpg"},
+	{Album: "WesAndCasey", Full: "WesAndCasey-8.jpg", Thumb: "WesAndCasey-8.jpg"},
+	{Album: "WesAndCasey", Full: "WesAndCasey-9.jpg", Thumb: "WesAndCasey-9.jpg"},
+	{Album: "WesAndCasey", Full: "WesAndCasey-10.jpg", Thumb: "WesAndCasey-10.jpg"},
+	{Album: "WesAndCasey", Full: "WesAndCasey-11.jpg", Thumb: "WesAndCasey-11.jpg"},
+	{Album: "WesAndCasey", Full: "WesAndCasey-12.jpg", Thumb: "WesAndCasey-12.jpg"}
+	];
+
+	BuildImageList(images, "photography", "family");
+	
 	var galleries = $('.ad-gallery').adGallery({
 		effect: 'fade',
 		width: '800px',

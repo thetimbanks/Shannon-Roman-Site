@@ -6,51 +6,52 @@ h1=  title
 	.ad-nav
 		.ad-thumbs
 			ul.ad-thumb-list
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/engagement/1.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/engagement/1.jpg")
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/engagement/LaurenAndAaron1.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/engagement/LaurenAndAaron1.jpg")
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/engagement/LaurenAndAaron2.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/engagement/LaurenAndAaron2.jpg")
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/engagement/SaraAndGrant1.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/engagement/SaraAndGrant1.jpg")
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/engagement/SaraAndGrant2.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/engagement/SaraAndGrant2.jpg")
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/engagement/SaraAndGrant3.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/engagement/SaraAndGrant3.jpg")
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/engagement/SaraAndGrant4.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/engagement/SaraAndGrant4.jpg")
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/engagement/SaraAndGrant5.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/engagement/SaraAndGrant5.jpg")
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/engagement/SaraAndGrant6.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/engagement/SaraAndGrant1.jpg")
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/engagement/SaraAndGrant7.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/engagement/SaraAndGrant7.jpg")
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/engagement/SaraAndGrant8.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/engagement/SaraAndGrant8.jpg")
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/engagement/SaraAndGrant9.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/engagement/SaraAndGrant9.jpg")
-				li
-					a(href="http://s3.amazonaws.com/ShannonRoman/full/engagement/SaraAndGrant10.jpg")
-						img.image0(src="http://s3.amazonaws.com/ShannonRoman/thumb/engagement/SaraAndGrant10.jpg")
+			
 
-						
-
-
+script(src="/javascripts/jquery.tmpl.js")
+script(src="/javascripts/slideshow.tmpl.js")
 script(src="/javascripts/jquery.ad-gallery.js")
 script
+	var images = [
+	{Album: "BrandonAndTina", Full: "BrandonTinaEngagement-1.jpg", Thumb: "BrandonAndTinaEngagement-1.jpg"},
+	{Album: "LaurenAndAaronEngagement", Full: "LaurenAaronEngagement-1.jpg", Thumb: "LaurenAndAaronEngagementThumbnail-1.jpg"},
+	{Album: "LaurenAndAaronEngagement", Full: "LaurenAaronEngagement-2.jpg", Thumb: "LaurenAndAaronEngagementThumbnail-2.jpg"},
+	{Album: "LaurenAndAaronEngagement", Full: "LaurenAaronEngagement-3.jpg", Thumb: "LaurenAndAaronEngagementThumbnail-3.jpg"},
+	{Album: "LaurenAndAaronEngagement", Full: "LaurenAaronEngagement-4.jpg", Thumb: "LaurenAndAaronEngagementThumbnail-4.jpg"},
+	{Album: "LaurenAndAaronEngagement", Full: "LaurenAaronEngagement-5.jpg", Thumb: "LaurenAndAaronEngagementThumbnail-5.jpg"},
+	{Album: "LaurenAndAaronEngagement", Full: "LaurenAaronEngagement-6.jpg", Thumb: "LaurenAndAaronEngagementThumbnail-6.jpg"},
+	{Album: "LaurenAndAaronEngagement", Full: "LaurenAaronEngagement-7.jpg", Thumb: "LaurenAndAaronEngagementThumbnail-7.jpg"},
+	{Album: "LaurenAndAaronEngagement", Full: "LaurenAaronEngagement-8.jpg", Thumb: "LaurenAndAaronEngagementThumbnail-8.jpg"},
+	{Album: "LaurenAndAaronEngagement", Full: "LaurenAaronEngagement-9.jpg", Thumb: "LaurenAndAaronEngagementThumbnail-9.jpg"},
+	{Album: "LaurenAndAaronEngagement", Full: "LaurenAaronEngagement-10.jpg", Thumb: "LaurenAndAaronEngagementThumbnail-10.jpg"},
+	{Album: "LaurenAndAaronEngagement", Full: "LaurenAaronEngagement-11.jpg", Thumb: "LaurenAndAaronEngagementThumbnail-11.jpg"},
+	{Album: "LaurenAndAaronEngagement", Full: "LaurenAaronEngagement-12.jpg", Thumb: "LaurenAndAaronEngagementThumbnail-12.jpg"},
+	{Album: "LaurenAndAaronEngagement", Full: "LaurenAaronEngagement-13.jpg", Thumb: "LaurenAndAaronEngagementThumbnail-13.jpg"},
+	{Album: "LaurenAndAaronEngagement", Full: "LaurenAaronEngagement-14.jpg", Thumb: "LaurenAndAaronEngagementThumbnail-14.jpg"},
+	{Album: "LaurenAndAaronEngagement", Full: "LaurenAaronEngagement-15.jpg", Thumb: "LaurenAndAaronEngagementThumbnail-15.jpg"},
+	{Album: "LaurenAndAaronEngagement", Full: "LaurenAaronEngagement-16.jpg", Thumb: "LaurenAndAaronEngagementThumbnail-16.jpg"},
+	{Album: "LaurenAndAaronEngagement", Full: "LaurenAaronEngagement-17.jpg", Thumb: "LaurenAndAaronEngagementThumbnail-17.jpg"},
+	{Album: "LaurenAndAaronEngagement", Full: "LaurenAaronEngagement-18.jpg", Thumb: "LaurenAndAaronEngagementThumbnail-18.jpg"},
+	{Album: "LaurenAndAaronEngagement", Full: "LaurenAaronEngagement-19.jpg", Thumb: "LaurenAndAaronEngagementThumbnail-19.jpg"},
+	{Album: "LaurenAndAaronEngagement", Full: "LaurenAaronEngagement-20.jpg", Thumb: "LaurenAndAaronEngagementThumbnail-20.jpg"},
+	{Album: "LaurenAaronOther", Full: "LaurenAaron-1.jpg", Thumb: "LaurenAndAaron-2.jpg"},
+	{Album: "LaurenAaronOther", Full: "LaurenAaron-2.jpg", Thumb: "LaurenAndAaron-3.jpg"},
+	{Album: "LaurenAaronOther", Full: "LaurenAaron-3.jpg", Thumb: "LaurenAndAaron-4.jpg"},
+	{Album: "SaraAndGrant", Full: "SaraAndGrant-1.jpg", Thumb: "SaraAndGrantThumbnail-1.jpg"},
+	{Album: "SaraAndGrant", Full: "SaraAndGrant-2.jpg", Thumb: "SaraAndGrantThumbnail-2.jpg"},
+	{Album: "SaraAndGrant", Full: "SaraAndGrant-3.jpg", Thumb: "SaraAndGrantThumbnail-3.jpg"},
+	{Album: "SaraAndGrant", Full: "SaraAndGrant-4.jpg", Thumb: "SaraAndGrantThumbnail-4.jpg"},
+	{Album: "SaraAndGrant", Full: "SaraAndGrant-5.jpg", Thumb: "SaraAndGrantThumbnail-5.jpg"},
+	{Album: "SaraAndGrant", Full: "SaraAndGrant-6.jpg", Thumb: "SaraAndGrantThumbnail-6.jpg"},
+	{Album: "SaraAndGrant", Full: "SaraAndGrant-7.jpg", Thumb: "SaraAndGrantThumbnail-7.jpg"},
+	{Album: "SaraAndGrant", Full: "SaraAndGrant-8.jpg", Thumb: "SaraAndGrantThumbnail-8.jpg"},
+	{Album: "SaraAndGrant", Full: "SaraAndGrant-9.jpg", Thumb: "SaraAndGrantThumbnail-9.jpg"},
+	{Album: "SaraAndGrant", Full: "SaraAndGrant-10.jpg", Thumb: "SaraAndGrantThumbnail-10.jpg"},
+	{Album: "SaraAndGrant", Full: "SaraAndGrant-11.jpg", Thumb: "SaraAndGrantThumbnail-11.jpg"},
+	];
+	
+	BuildImageList(images, "photography", "engagement");
+	
 	var galleries = $('.ad-gallery').adGallery({
 		effect: 'fade',
 		width: '800px',
