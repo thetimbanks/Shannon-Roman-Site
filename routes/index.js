@@ -7,7 +7,7 @@ var config = require('../config')
 	, email = require('mailer');
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Title' })
+  res.render('index', { title: 'Home' })
 };
 
 exports.photography = function(req, res){
