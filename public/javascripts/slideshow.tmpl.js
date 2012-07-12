@@ -2,7 +2,7 @@
 
 BuildImageList = function(list, category, type) {
 	
-	var markup = "<li><a href='http://s3.amazonaws.com/ShannonRoman/" + category + "/full/" + type + "/${$item.getAlbum()}${Full}'><img src='http://s3.amazonaws.com/ShannonRoman/" + category + "/thumb/" + type + "/${$item.getAlbum()}${Thumb}' class='image0' /></a></li>";
+	var markup = "<li><a href='http://s3.amazonaws.com/ShannonRoman/" + category + "/full/" + type + "/${$item.getAlbum()}${File}'><img src='http://s3.amazonaws.com/ShannonRoman/" + category + "/thumb/" + type + "/${$item.getAlbum()}${File}' class='image0' /></a></li>";
 	
 	// Compile the markup as a named template
 	$.template( "imageTemplate", markup);
